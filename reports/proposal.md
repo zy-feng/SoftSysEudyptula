@@ -9,8 +9,8 @@ The goal of this project is to complete as many Eudyptula challenges as we can. 
 We believe that is a reasonable lower bound goal for the project to complete up to task 10, out of 20 total. Task 10 is a milestone of this challenge, as one will become authorized as Linux kernel contributor after task 10.
 
 ### Resources
-- [http://tldp.org/LDP/lkmpg/2.6/html/](The Linux Kernel Module Programming Guide)
-- [https://github.com/agelastic/eudyptula](A list of Eudyptula tasks)
+- [The Linux Kernel Module Programming Guide](http://tldp.org/LDP/lkmpg/2.6/html)
+- [A list of Eudyptula tasks](https://github.com/agelastic/eudyptula)
 
 
 ### Next steps
