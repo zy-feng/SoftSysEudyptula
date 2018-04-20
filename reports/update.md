@@ -22,7 +22,7 @@ By working on this project, we hope to achieve following learning goals:
 
 - The official kernel module programming guide can be found here <https://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf>. The document touches on
 
-- - How to write and run kernel modules
+  - How to write and run kernel modules
   - How to format the modules professionally
   - How to link the modules to system calls, memory and processes
   - How to manage multiple modules
