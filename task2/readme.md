@@ -32,3 +32,9 @@ kernel configuration file is a precious thing, all kernel developers
 have one they have grown and tended to over the years.  This is the
 start of a long journey with yours, don't discard it like was a broken
 umbrella, it deserves better than that.
+
+## Helpful resources
+
+- [How to build and install the latest Linux kernel from source](https://medium.freecodecamp.org/building-and-installing-the-latest-linux-kernel-from-source-6d8df5345980)
+- [How to Build a Custom Kernel on Ubuntu](https://www.maketecheasier.com/build-custom-kernel-ubuntu/)
+- [Mentoring Eudyptula Challenge - 2](http://merafiq.blogspot.com/2016/03/mentoring-eudyptula-challenge-2.html) 
