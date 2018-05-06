@@ -1,9 +1,8 @@
 # SoftSysEudyptula
+## Learning about how operating systems work through Eudyptula challenges
 
 ## Olin College of Engineering Software Systems Spring 2018
 ## Zhengyang Feng and Sungwoo Park
-
-Learning about how operating systems work through Eudyptula challenges
 
 ### Project objective
 The goal of this project is to complete as many Eudyptula challenges as we can during the timeframe given for this project. Eudyptula is a series of programming exercises for the linux kernel. It gradually gets more complex and difficult, starting from simple “hello world” program to getting a patch accepted by the linux community for the kernel codebase.
