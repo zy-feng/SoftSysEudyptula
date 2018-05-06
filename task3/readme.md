@@ -15,3 +15,8 @@ The tasks for this round is:
     that would be acceptable for merging in the kernel source tree.
     (Hint, read the file Documentation/SubmittingPatches and follow the
     steps there.)
+
+# Results
+
+- `Makefile` was modified to complete this task. The file used for kernel compilation is duplicated in this directory.
+
