@@ -33,7 +33,15 @@ have one they have grown and tended to over the years.  This is the
 start of a long journey with yours, don't discard it like was a broken
 umbrella, it deserves better than that.
 
-## Helpful resources
+## Results
+
+Original kernel version
+![original kernel version](current_kernel_version.JPG)
+
+After hours of build process and installing new kernel
+![new kernel version](new_kernel_version.JPG)
+
+## Helpful resources and notes
 
 - [How to build and install the latest Linux kernel from source](https://medium.freecodecamp.org/building-and-installing-the-latest-linux-kernel-from-source-6d8df5345980)
 - [How to Build a Custom Kernel on Ubuntu](https://www.maketecheasier.com/build-custom-kernel-ubuntu/)
