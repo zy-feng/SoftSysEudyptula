@@ -46,5 +46,8 @@ In terms of meeting the stated learning goals, I think I have met most of them, 
 
 |Commands|Usage|
 |---|---|
-|`uname -a`|Check Linux System Info|
-|`uname -r`|Check Kernel Version Number|
+|`uname -a`|Linux system info|
+|`uname -r`|Kernel version number|
+|`lscpu`|CPU Architecture Info|
+|`lsusb -v`|List USB device|
+|`dmesg -wH`|Monitor kernel Buffer| 
