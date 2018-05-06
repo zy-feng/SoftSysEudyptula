@@ -1,0 +1,13 @@
+--- old_Makefile	2018-05-06 16:31:47.330241424 -0400
++++ Makefile	2018-05-06 16:20:29.758241424 -0400
+@@ -2,7 +2,7 @@
+ VERSION = 4
+ PATCHLEVEL = 17
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc3
++EXTRAVERSION = -eudyptula
+ NAME = Fearless Coyote
+ 
+ # *DOCUMENTATION*
+
+Modify the Makefile EXTRAVERSION field to append "-eudyptule" in the version string.
