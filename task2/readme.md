@@ -36,9 +36,11 @@ umbrella, it deserves better than that.
 ## Results
 
 Original kernel version
+
 ![original kernel version](current_kernel_version.JPG)
 
 After hours of build process and installing new kernel
+
 ![new kernel version](new_kernel_version.JPG)
 
 ## Helpful resources and notes
