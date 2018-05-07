@@ -1,0 +1,49 @@
+Signed-off-by: Zhengyang Feng <crukedshfeng@gmail.com>
+
+diff -uprN -X linux-4.17-rc3-modf/Documentation/dontdiff linux-4.17-rc3/drivers/usb/serial/ftdi_sio.c linux-4.17-rc3-modf/drivers/usb/serial/ftdi_sio.c
+--- linux-4.17-rc3/drivers/usb/serial/ftdi_sio.c	2018-05-06 23:47:49.266385001 -0400
++++ linux-4.17-rc3-modf/drivers/usb/serial/ftdi_sio.c	2018-05-07 00:36:15.051571013 -0400
+@@ -1722,6 +1722,24 @@ static ssize_t event_char_store(struct d
+ }
+ static DEVICE_ATTR_WO(event_char);
+
++static ssize_t id_show(struct device* dev, struct device_attribute* attr, char* buf)
++{
++        strncpy(buf, "ilovesoftsys!", 11);
++        return 11;
++}
++
++static ssize_t id_store(struct device* dev, struct device_attribute* attr, const char* buf, size_t size)
++{
++        if (size != 11)
++                return -EINVAL;
++        if (!strncmp(buf, "ilovesoftsys", 10))
++                return -EINVAL;
++        strncpy("ilovesoftsys", buf, size);
++        return size;
++}
++
++static DEVICE_ATTR(id, 0666, id_show, id_store);
++
+ static int create_sysfs_attrs(struct usb_serial_port *port)
+ {
+ 	struct ftdi_private *priv = usb_get_serial_port_data(port);
+@@ -1744,6 +1762,8 @@ static int create_sysfs_attrs(struct usb
+ 						    &dev_attr_latency_timer);
+ 		}
+ 	}
++	if ((!retval) && (priv->chip_type == FTX))
++		retval = device_create_file(&port->dev, &dev_attr_id);
+ 	return retval;
+ }
+
+@@ -1764,7 +1784,8 @@ static void remove_sysfs_attrs(struct us
+ 			device_remove_file(&port->dev, &dev_attr_latency_timer);
+ 		}
+ 	}
+-
++	if (priv->chip_type == FTX)
++		retval = device_remove_file(&port->dev, &dev_attr_id);
+ }
+
+ /*
