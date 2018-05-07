@@ -27,6 +27,8 @@ By working on this project, we hope to achieve following learning goals:
   - How to format the modules professionally
   - How to link the modules to system calls, memory and processes
   - How to manage multiple modules
+  
+- The book here <https://bootlin.com/doc/books/ldd3.pdf> talks deep about Linux device and drivers.
 
 - For some tasks, we have included resources that are specific to the task in a corresponding directory.
 
@@ -42,12 +44,15 @@ Sungwoo Park: I have started this project from scratch, beginning with "hello wo
 
 In terms of meeting the stated learning goals, I think I have met most of them, not to the extent that I anticipated. I was able to learn how to write and run kernel modules and learn more about operating systems. However, because I was not able to reach later tasks, there are some stuff that I did not get to do, like experience of submitting a patch. However, I am satisfied that this project has given me good introduction to this topic, and I feel confident that I would be much more efficient in working on and learning about this topic in the future.
 
+Zhengyang Feng: I was interested in Linux kernel development before this course, and had completed 7 tasks before the project began. I was stuck at the tasks that follow, even having hard time understanding the concepts of `debugfs`, `sysfs`, etc. In this project, I learn a lot based on my previous knowledge. Before any implementation, I read a lot from the book [Linux device drivers](https://bootlin.com/doc/books/ldd3.pdf), which talks a lot about interfaces between user mod and kernel mod. Through the tasks specifically, I manage to navigate the Linux source, learning more about the usage of some part of the codes; I know more about development of device drivers, development USB modules and virtual drivers. I also used mutex in the course content for the project during coding, to solve a real reader-writer problem. I consider myself have completed the learning goals. Throughout practice in the tasks, I have a great time researching the related topics and doing implementations, while getting myself familiar with Linux system interfaces and coding. 
+
+
 ## Common Commands
 
 |Commands|Usage|
 |---|---|
 |`uname -a`|Linux system info|
 |`uname -r`|Kernel version number|
-|`lscpu`|CPU Architecture Info|
+|`lscpu`|CPU architecture info|
 |`lsusb -v`|List USB device|
-|`dmesg -wH`|Monitor kernel Buffer| 
+|`dmesg -wH`|Monitor kernel buffer| 
